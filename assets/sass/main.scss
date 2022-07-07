@@ -163,11 +163,11 @@
 		}
 
 		&:hover {
-			color: #ed786a;
+			color: rgba(108,182,134);
 			border-bottom-color: rgba(255, 255, 255, 0);
 
 			strong {
-				color: #ed786a;
+				color: rgba(108,182,134);
 			}
 		}
 	}
@@ -558,7 +558,7 @@
 		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
-		background: #ed786a;
+		background: rgba(108,182,134);
 		color: #fff !important;
 		text-transform: uppercase;
 		border-radius: 4px;
@@ -586,7 +586,7 @@
 		}
 
 		&:active {
-			background: #ed786a;
+			background: rgba(108,182,134);
 		}
 
 		&.alt {
@@ -682,7 +682,7 @@
 		h1 {
 			font-family: 'Arvo';
 			font-weight: 700;
-			color: #ed786a;
+			color: rgba(108,182,134);
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
@@ -766,13 +766,13 @@
 
 				&.active > a:before,
 				&:hover > a:before {
-					background: #ED786A;
+					background: rgba(108,182,134);
 					color: #fff;
 				}
 
 				&.active > a > span,
 				&:hover > a > span {
-					color: #ED786A;
+					color: rgba(108,182,134);
 				}
 			}
 		}
@@ -840,7 +840,7 @@
 			&:hover {
 				> span, > a {
 					@include vendor('transition', ('color 0.25s ease-in-out', 'border-bottom-color 0.25s ease-in-out'));
-					color: #ed786a;
+					color: rgba(108,182,134);
 				}
 			}
 		}
