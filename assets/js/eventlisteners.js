@@ -15,3 +15,36 @@ function changeImageIn(source, select){
 function changeImageOut(source, select){
     select.src = source
 }
+
+const products= document.querySelectorAll('.product-img')
+
+document.getElementById('scroll-left').addEventListener('click', scrollLeft)
+
+document.getElementById('scroll-right').addEventListener('click', scrollRight)
+
+const images = ["images/Bottle_Empty.jpg", "images/Egg_After.jpg", "images/Pom_Full.jpg"]
+
+let i = 0;
+
+function scrollLeft(){
+    if (i == 0){
+        i = 2
+    } else {
+        i --
+    }
+    products[0].src = images[i]
+    setTimeout(function(){products[1].src = images[i]}, 150)
+    setTimeout(function(){products[2].src = images[i]}, 300)
+    setTimeout(function(){products[3].src = images[i]}, 450)
+}
+function scrollRight(){
+    if (i == 2){
+        i = 0
+    } else{
+        i ++
+    }
+    products[3].src = images[i]
+    setTimeout(function(){products[2].src = images[i]}, 150)
+    setTimeout(function(){products[1].src = images[i]}, 300)
+    setTimeout(function(){products[0].src = images[i]}, 450)
+}

@@ -2117,18 +2117,21 @@ input, select, textarea {
 		box-shadow: inset 0px -8px 0px 0px #fff, inset 0px 8px 0px 0px #fff;
 		position: relative;
 		text-transform: uppercase;
-		background: url("../../images/banner.jpg");
+		background: #fff;
 		background-size: cover;
-		padding: 10em 0;
+		padding: 0 0;
 	}
 
-		#banner p {
-			font-weight: 400;
-			font-size: 2em;
-			line-height: 1.5em;
-			letter-spacing: 4px;
-			text-align: center;
+		#banner h2{
+			padding-top: 1em;
+			padding-left: 1em;
 			margin: 0;
+			text-align: left;
+			color: rgb(238, 86, 42);
+		}
+
+		#banner > div {
+			height: 16em;
 		}
 
 		#banner strong {
@@ -2162,6 +2165,44 @@ input, select, textarea {
 				transform: scaleX(-1);
 				right: 0;
 			}
+			
+			.products{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				padding-bottom: 2rem;
+			}
+			.products button{
+				height: 100%;
+				width: 5%;
+				border: none;
+				align-self: center;
+			}
+
+			.product{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				height: 12rem;
+				
+				width: 10%;
+				margin: 0;
+			}
+
+			.product-img.image.featured{
+				align-self: center;
+				height: 8rem;
+				width: auto;
+				margin: 0;
+			} 
+			.product-title{
+				color: #888;
+			}
+
+			.product-price{
+				color: #888;
+			}
+			
 
 /* Main */
 
@@ -2308,7 +2349,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 8em 0;
+				padding: 0;
 			}
 
 				#banner > .container {
@@ -2576,7 +2617,7 @@ input, select, textarea {
 		/* Image */
 
 			.image.featured {
-				margin: 0 0 1.5em 0;
+				margin: 0 0 0.5em 0;
 			}
 
 			.image.left {
@@ -2637,7 +2678,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 5em 0;
+				padding: 0;
 			}
 
 				#banner > .container {
@@ -2650,6 +2691,12 @@ input, select, textarea {
 
 				#banner p {
 					font-size: 1.25em;
+				}
+				.products{
+					flex-wrap: wrap;
+				}
+				.product{
+					width: 40%;
 				}
 
 		/* Features */
